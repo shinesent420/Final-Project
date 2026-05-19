@@ -36,6 +36,7 @@ a {
     display: inline;
     text-decoration: none;
 }
+
 img {
     width: 100%;
 }
@@ -45,13 +46,16 @@ h1 {
     line-height: 56px;
     color: #1a202c;
 }
+
 .purple {
     color: #6415ff;
 }
+
 p {
     font-size: 18px;
     line-height: 1.5;
 }
+
 .section__tag {
     font-size: 16px;
     color: #6415ff;
@@ -68,6 +72,7 @@ p {
     margin: 16px 0;
     letter-spacing: 0.25em;
 }
+
 #features .section__title,
 #pricing .section__title {
    text-align: center;
@@ -79,6 +84,7 @@ p {
     color: #7c8ba1;
     line-height: 1.625;
 }
+
 .btn {
   background-color: #6415ff;
   padding: 12px 32px;
@@ -88,10 +94,12 @@ p {
   color: #fff;
   font-weight: bold;
   transition: all 300ms;
+}
 
-  .btn:hover {
+.btn:hover {
   background-color: rgba(80, 17, 204);
 }
+
 button {
   cursor: pointer;
   border: none;
@@ -103,3 +111,33 @@ button {
     padding-top: 32px;
     display: flex;
 }
+nav__logo {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding-bottom: 4px;
+}
+.nav__logo--title {
+  font-weight: 900;
+  font-size: 24px;
+  margin-left: 12px;
+  padding-bottom: 2px;
+  letter-spacing: 0.6px;
+}
+.nav__logo--img {
+  height: 40px;
+  width: 40px;
+}
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
