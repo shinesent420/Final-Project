@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6487f0a3d4.js" crossorigin="anonymous"></script>
-    <style media="all" id="fa-main"></style>
     <style media="all" id="fa-v4-font-face"></style>
     <style media="all" id="fa-v5-font-face"></style>
     <style media="all" id="fa-v4-shims"></style>
+     <style media="all" id="fa-main"></style>
     <script src="index.js"></script>
     <title>Module 2 Final Project (Example Website)</title>
 </head>
-
 <body>
     <section id="landing">
         <nav>
@@ -28,8 +27,8 @@
                     <a href="#" class="nav__link">Contact Us</a>
                     <a href="#" class="nav__link">Login</a>
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-                </div>
-                <button class="btn__menu" onclick="openMenu()"></button>
+            </div>
+            <button class="btn__menu" onclick="openMenu()"></button>
             </div>
         </nav>
         <div class="menu">
@@ -42,13 +41,20 @@
                     <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
                     <a href="#sign_up" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
         </div>
+    </div>
         <header>
-            <div class="container"></div>
-            <div class="row"></div>
-            <div class="header__description"></div>
-            <h1>
-                Beautiful React Templates<span class="purple"> for you</span>
-            </h1>
+            <div class="container">
+             <div class="row">
+                 <div class="header__description"></div>
+                    <h1>
+                      " Beautiful React Templates "
+                      <span class="purple"> for you.</span>
+                    </h1>
+                <p class="header__description--para"> 
+                    " Our templates are easy to setup, understand and customize. 
+                    Fully modular components with a variety of pages and components. "
+                </p>
+                <div class="header__email"></div>
             <figure class="header__img--wrapper"></figure>
         </header>
     </section>
