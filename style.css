@@ -524,8 +524,8 @@ header .row {
     right: 0px;
     bottom: 0px;
     fill: rgb(100, 21, 255);
-   --tw-text-opacity: 1;
-    color: rgba(100, 21, 255, var(--tw-text-opactiy));
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
     z-index: 0;
     display: block;
 }
@@ -1325,6 +1325,7 @@ footer {
     .header__img {
         max-width: 512px;
     }
+
     .plan__button {
         max-width: none;
     }
@@ -1332,15 +1333,20 @@ footer {
     .plan__bottom {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .testimonials__img {
+        width: 40%;
+    }
 
     .testimonials__description {
         width: calc(100% - 40%);
     }
-    }
+}
 
-    @media (max-width: 1024px) {
-        .nav__links {
-            display: none;
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
         }
 
         .btn__menu {
@@ -1473,6 +1479,7 @@ footer {
             padding: 80px 32px;
         }
     }
+
 @media (max-width: 768px) {
   .features {
     justify-content: center;
@@ -1558,11 +1565,12 @@ footer {
     margin-left: 0px;
   }
 }
+    
 @media (max-width: 640px) {
   .section__title {
     line-height: 1.25;
   }
-  
+
   .container {
     padding: 80px 0;
   }
@@ -1723,18 +1731,6 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-}
 
 
 
