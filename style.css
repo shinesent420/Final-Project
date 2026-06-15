@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    color: #243e63;
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 body {
     max-width: 100vw;
     overflow-x: hidden;
-    color: #243e63;
+  
 }
 
 section {
@@ -29,9 +30,14 @@ section {
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 32px;
+}
+
+.row__narrow {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 img {
@@ -54,7 +60,7 @@ button {
 
 h1 {
     font-size: 48px;
-    line-height: 1.2;
+    line-height: 1.25;
     color: #1a202c;
 }
 
@@ -75,7 +81,7 @@ p {
     font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
-    margin: 16px 2 24px 0;
+    margin: 16px 0 24px 0;
     color: #243e63;
 }
 
@@ -84,12 +90,18 @@ p {
     text-align: center;
 }
 
-
 /* NAVIGATION */
 
+nav {
+  padding-top: 32px;
+  display: flex;
+}
+
 .nav {
-    padding-top: 32px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;  
 }
 
 .nav__row {
@@ -192,48 +204,6 @@ p {
     stroke-width: 2;
     color: #234e63;
 }
-
-/* HEADER */
-
-header .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 64px;
-  padding-top: 96px;
-}
-
-.header__description,
-.header__img--wrapper {
-  width: 50%;
-}
-
-.header__description--para {
-  margin: 32px 0;
-}
-
-.header__email {
-  position: relative;
-  max-width: 448px;
-}
-
-.header__email--input {
-  width: 100%;
-  border-radius: 9999px;
-  border: 2px solid rgb(229, 231, 235);
-  padding: 20px 192px 20px 32px;
-  font-size: 16px;
-}
-
-.header__email--btn {
-  position: absolute;
-  right: 6px;
-  top: 6px;
-  bottom: 6px;
-}
-
-
-
 
 
 /* MOBILE MENU */
@@ -344,7 +314,7 @@ header .row {
 }
 
 
-
+/* FEATURES */
 
 #features .section__title,
 #pricing .section__title {
@@ -1023,10 +993,8 @@ header .row {
 #testimonials .row {
     display: flex !important;
     flex-direction: row !important;
-
     justify-content: space-between;
     align-items: center;
-
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -1049,8 +1017,10 @@ RIGHT SIDE TEXT
 =================================*/
 
 .testimonials__description {
-    width: 60%;
+    display: flex;
+    width: 50%;
     padding-left: 64px;
+    flex-direction: column;
 }
 
 .section__tag {
@@ -1083,6 +1053,15 @@ RIGHT SIDE TEXT
 /* ============================
 TESTIMONIAL CONTENT
 ============================ */
+#testimonials {
+  padding: 0px;
+}
+
+#testimonials .container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .testimonial {
     margin-top: 40px;
 }
@@ -1107,7 +1086,6 @@ TESTIMONIAL CONTENT
     font-size: 16px;
     line-height: 1.625;
     color: rgb(74, 85, 104);
-
     margin-bottom: 32px;
 }
 
@@ -1162,16 +1140,12 @@ TESTIMONIAL CONTENT
 .testimonial__button {
     width: 48px;
     height: 48px;
-
     border: none;
     border-radius: 50%;
-
     background-color: rgb(237, 242, 247);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
     transition: all 300ms ease;
 }
